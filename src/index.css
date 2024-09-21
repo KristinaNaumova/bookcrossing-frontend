@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    .react-datepicker__header {
+        @apply bg-transparent font-manrope !important;
+    }
+}
+
+.react-datepicker__header {
+    background-color: transparent !important;
+    font-family: Manrope !important;
+}

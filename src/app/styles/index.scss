@@ -1,0 +1,275 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+}
+
+.layout {
+  flex: 1;
+  display: flex;
+  min-height: 100vh;
+  position: relative;
+  flex-direction: column;
+}
+
+.loader-page {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ck-focused {
+  border: 1px solid rgba(0, 0, 0, 0.87) !important;
+}
+
+.row-class {
+  min-height: 56px !important;
+  overflow-x: hidden;
+}
+
+
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.auth-button {
+  box-shadow: -2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+aside {
+  height: 100%;
+}
+
+.equipment-page {
+  display: grid;
+  gap: 24px;
+  width: 100%;
+  grid-template-columns: 382px 1fr;
+
+  &__right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+}
+
+
+.simplebar-scrollbar:before {
+  background-color: #036C8D !important;
+  top: 18px !important;
+  width: 8px;
+}
+
+.select-custom {
+  .simplebar-content-wrapper {
+    padding-right: 2px !important ;
+  }
+
+  .simplebar-scrollbar:before {
+    background-color: #036C8D !important;
+    top: 4px !important;
+    width: 2px;
+  }
+}
+
+.simplebar-content-wrapper {
+  padding-right: 22px ;
+}
+
+.simplebar-visible:before {
+  opacity: 1 !important;
+}
+
+thead {
+  position: sticky;
+  top: 0px;
+  margin: 0 0 0 0;
+  z-index: 10;
+
+  &:after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 28px;
+    z-index: 100;
+    background-color: inherit;
+    right: -23px;
+    top: 0;
+    position: absolute;
+  }
+}
+
+.text-field {
+  .line {
+    position: absolute;
+    content: '';
+    top: -1px;
+    left: 4px;
+    height: 3px;
+    background-color: rgb(48, 46, 49);
+    display: block;
+  }
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
+
+.select {
+  border: 3px solid rgb(3, 108, 141);
+  border-radius: 4px;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  background: rgb(48, 46, 49);
+  min-height: 95px;
+}
+
+.react-datepicker-popper {
+  z-index: 100 !important;
+}
+
+select:not([size]) {
+  background-position: right 6px center;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNyIgaGVpZ2h0PSI1IiB2aWV3Qm94PSIwIDAgNyA1IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNNyAwTDMuNSA1TDAgMEw3IDBaIiBmaWxsPSIjMDA0QzhDIi8+Cjwvc3ZnPgo=");
+}
+
+
+input:focus, input:hover, textarea:focus, textarea:hover {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+input[type='radio'] {
+  box-sizing: border-box;
+  height: 11px;
+  border-radius: 50%;
+  width: 11px;
+  border: 1px solid #036C8D;
+  background: transparent;
+}
+
+input[type='radio']:focus, input[type='radio']:checked {
+  box-sizing: border-box;
+  height: 11px;
+  border-radius: 50%;
+  width: 11px;
+  border: none !important;
+  background-color: transparent !important;
+  background-image: url("/icons/check.svg") !important;
+  background-size: 100% 100%;
+
+}
+
+input[type='checkbox'] {
+  box-sizing: border-box;
+  display: block;
+  height: 12px;
+  border: none !important;
+  border-radius: 2px;
+  width: 12px;
+  background-size: 100% 100%;
+  background-position: 0 0;
+  background-color: #036C8D;
+  background-image: none !important;
+}
+
+input[type='checkbox']:checked {
+  height: 12px;
+  width: 12px;
+  border: none !important;
+  border-radius: 2px;
+  background-color: transparent !important;
+  background-repeat: no-repeat;
+  background-image: url("/icons/checkbox.svg") !important;
+  background-size: 100% 100%;
+
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 96px);
+}
+
+
+td, th, tr, table {
+  border: none !important;
+  border-spacing: 0 !important;
+}
+
+.rbc-header, .rbc-month-view, .rbc-month-row {
+  border: none !important;
+}
+
+.rbc-row-bg {
+  column-gap: 7px !important;
+  min-height: 80px !important;
+}
+
+.rbc-date-cell {
+  position: relative !important;
+}
+
+.rbc-date-cell button {
+  position: absolute;
+  left: 5px;
+  font-size: 12px;
+  color: rgba(3, 108, 141, 1);
+  top: 2px;
+}
+
+.react-datepicker__day--keyboard-selected {
+  border-radius: 50% !important;
+  background: rgb(0, 100, 240);
+}
+
+.react-responsive-modal-container {
+  animation-fill-mode: none !important;
+
+}
+
+.react-responsive-modal-modal {
+  font-family: "Manrope";
+  width: 90% !important;
+  animation-fill-mode: none;
+}
